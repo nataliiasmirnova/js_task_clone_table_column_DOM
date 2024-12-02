@@ -21,10 +21,13 @@ for (let i = 0; i < rows.length; i++) {
   newCell.textContent = copiedData[i];
 }
 
-// Receiving collection from the first table raw
+// Receiving collection from the first and last table's rows
 const firstRow = table.rows[0].cells;
+const lastRow = table.rows[rows.length - 1].cells;
 
-// Changing tag of the new row header from <td> to <th>
+// Changing tag of the first and last cells from <td> to <th>
 const newRowHeader = firstRow[firstRow.length - 2];
+const newLastCell = lastRow[lastRow.length - 2];
 
 newRowHeader.outerHTML = `<th>${newRowHeader.textContent}</th>`;
+newLastCell.outerHTML = `<th>${newLastCell.textContent}</th>`;
