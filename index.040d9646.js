@@ -1,0 +1,2 @@
+for(var t=document.querySelector("table"),e=t.rows,l=[],n=0;n<e.length;n++){var o=e[n].cells[1];l.push(o?o.textContent:"")}for(var r=0;r<e.length;r++)e[r].insertCell(e[r].cells.length-1).textContent=l[r];var h=t.rows[0].cells,c=t.rows[e.length-1].cells,s=h[h.length-2],a=c[c.length-2];s.outerHTML="<th>".concat(s.textContent,"</th>"),a.outerHTML="<th>".concat(a.textContent,"</th>");
+//# sourceMappingURL=index.040d9646.js.map
